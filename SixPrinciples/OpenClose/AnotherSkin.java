@@ -1,5 +1,3 @@
-package SixPrinciples.OpenClose;
-
 public class AnotherSkin extends AbstractSkin{
     
     public void display(){

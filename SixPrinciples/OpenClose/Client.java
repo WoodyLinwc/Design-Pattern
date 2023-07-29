@@ -1,5 +1,3 @@
-package SixPrinciples.OpenClose;
-
 public class Client {
     public static void main(String[] args) {
         SougoInput input = new SougoInput();

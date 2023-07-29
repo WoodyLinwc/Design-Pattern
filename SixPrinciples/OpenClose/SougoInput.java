@@ -1,6 +1,3 @@
-package SixPrinciples.OpenClose; 
-
-
 public class SougoInput {
     
     private AbstractSkin skin;
