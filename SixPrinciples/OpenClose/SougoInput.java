@@ -7,5 +7,6 @@ public class SougoInput {
     }
 
     public void display() {
+        skin.display();
     }
 }
