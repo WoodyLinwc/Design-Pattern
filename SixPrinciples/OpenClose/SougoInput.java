@@ -1,4 +1,5 @@
-package SixPrinciples.OpenClose;
+package SixPrinciples.OpenClose; 
+
 
 public class SougoInput {
     
