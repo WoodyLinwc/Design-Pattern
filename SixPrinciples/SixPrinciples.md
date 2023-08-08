@@ -27,3 +27,43 @@ public interface Quadrilateral {
 ```
 public class Square implements Quadrilateral{...}
 ```
+
+## 依赖倒转原则（Dependence Inversion Principle）
+
+这个原则是开闭原则的基础，具体内容：针对接口编程，依赖于抽象而不依赖于具体。
+
+```
+Before
+    public static void main(String[] args) {
+        XiHardDisk hardDisk = new XiHardDisk();
+        IntelCPU cpu = new IntelCPU();
+        KingstonMemory memory = new KingstonMemory();
+
+
+        Computer c = new Computer();
+        c.setCpu(cpu);
+        c.setHardDisk(hardDisk);
+        c.setMemory(memory);
+
+        c.run();
+    }
+```
+```
+After
+    public static void main(String[] args) {
+        
+        // create computer conponent objects
+        
+        HardDisk hardDisk = new XiHardDisk();
+        CPU cpu = new IntelCPU();
+        Memory memory = new KingstonMemory();
+
+        Computer c = new Computer();
+
+        c.setCpu(cpu);
+        c.setHardDisk(hardDisk);
+        c.setMemory(memory);
+
+        c.run();
+    }
+```
